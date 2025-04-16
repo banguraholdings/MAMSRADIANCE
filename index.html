@@ -15,20 +15,20 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
       padding: 20px;
     }
 
     .logo {
-      width: 200px; /* Increased from 150px */
+      width: 200px;
       margin-top: 30px;
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 26px;
       margin-top: 10px;
-      color: #f7c744; /* gold */
+      color: #f7c744;
     }
 
     p {
@@ -36,32 +36,42 @@
       margin: 20px 0;
     }
 
-    .button {
-      display: block;
-      width: 80%;
-      margin: 15px auto;
+    .link-box {
+      background-color: white;
+      border-radius: 20px;
       padding: 15px;
-      background-color: #f7c744; /* gold */
-      color: #1c2c1b; /* dark green text */
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background-color 0.3s;
+      margin: 15px auto;
+      width: 85%;
     }
 
-    .button:hover {
-      background-color: #e6b931;
+    .link-box a {
+      color: #1c2c1b;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      display: block;
     }
 
     .footer {
       margin-top: 30px;
-      font-size: 16px; /* Increased from 14px */
+      font-size: 16px;
       color: #cccccc;
     }
 
+    iframe {
+      margin-top: 20px;
+      width: 90%;
+      height: 200px;
+      border-radius: 15px;
+    }
+
     @media screen and (max-width: 600px) {
-      .button {
-        width: 90%;
+      .link-box {
+        width: 95%;
+      }
+
+      iframe {
+        height: 180px;
       }
     }
   </style>
@@ -69,12 +79,27 @@
 <body>
   <div class="container">
     <img src="mam.PNG" alt="Mam's Radiance Logo" class="logo" />
-    <h1>Thanks for doing business with us</h1>
+    <h1>Mam's Radiance</h1>
     <p>You’re not just a customer — you’re part of the radiance. Stay connected with us!</p>
 
-    <a href="https://wa.me/23290669301" class="button" target="_blank">Chat with Us on WhatsApp</a>
-    <a href="https://www.tiktok.com/@mams_radiance" class="button" target="_blank">Follow Us on TikTok</a>
-    <a href="https://www.instagram.com/mams.radiance" class="button" target="_blank">Visit Our Instagram</a>
+    <div class="link-box">
+      <a href="https://wa.me/23290669301" target="_blank">Chat with Us on WhatsApp</a>
+    </div>
+    <div class="link-box">
+      <a href="https://www.tiktok.com/@mams_radiance" target="_blank">Follow Us on TikTok</a>
+    </div>
+    <div class="link-box">
+      <a href="https://www.instagram.com/mams.radiance" target="_blank">Visit Our Instagram</a>
+    </div>
+    <div class="link-box">
+      <a href="https://www.facebook.com/share/16GbnVCXwu/?mibextid=wwXIfr" target="_blank">Follow Us on Facebook</a>
+    </div>
+    <div class="link-box">
+      <a href="#" target="_blank">Connect with Us on WeChat</a> <!-- You can replace # with actual link -->
+    </div>
+    <div class="link-box">
+      <a href="#" target="_blank">📍 Get Directions to Our Shop (YouTube)</a> <!-- Replace # with YouTube link -->
+    </div>
 
     <div class="footer">
       50 Godrich Street, Freetown<br>
